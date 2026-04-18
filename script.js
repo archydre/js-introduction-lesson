@@ -25,6 +25,7 @@ list.addEventListener("click", (e) => {
 
   words.splice(index, 1);
   li.remove();
+  localStorage.setItem("words", JSON.stringify(words));
   console.log("words:", words);
 });
 
